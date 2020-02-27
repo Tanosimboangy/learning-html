@@ -20,21 +20,116 @@
       <ul>
         <li>
           Attribute value must have qoutes.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;p&gt;</code><br>
+                    <code>&lt;input type=submit value=log-in&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;p&gt;</code><br>
+                    <code>&lt;input type="submit" value="log-in"&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </li>
         <li>
           Attribute are separated with spaces.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;p&gt;</code><br>
+                    <code>&lt;input type="submit"value="log-in"&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;p&gt;</code>
+                    <code>&lt;input type="submit" value="log-in"&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </li>
         <li>
           Attribute names need to be lowercase.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;p&gt;</code>
+                    <code>&lt;input type="SUBMIT" value="LOG-IN"&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;p&gt;</code>
+                      <code>&lt;input type="submit" value="log-in"&gt;</code><br>
+                    <code>&lt;/p&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
         </li>
         <li>
           Element types have private attribute.
+          <ul>
+            <li>
+              <b>Example:</b>
+              <ul>
+                <li>
+                  <b>Don't do this:</b><br>
+                  <code>&lt;p&gt;</code>
+                  <code>&lt;input type="submit,log-in"&gt;</code><br>
+                  <code>&lt;/p&gt;</code>
+                </li>
+                <li>
+                  <b>Do this instead:</b><br>
+                  <code>&lt;p&gt;</code>
+                    <code>&lt;input type="submit" value="log-in"&gt;</code><br>
+                  <code>&lt;/p&gt;</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li>
           Public attributes can go on any elements like: class; id=<q>hello</q>
         </li>
         <li>
           No double qoutes inside of doubles qoutes.
+          <ul>
+            <li>
+              <b>Example:</b>
+              <ul>
+                <li>
+                  <b>Don't do this:</b><br>
+                  <code>&lt;p&gt;</code>
+                  <code>&lt;input "type="submit" value="log-in""&gt;</code><br>
+                  <code>&lt;/p&gt;</code>
+                </li>
+                <li>
+                  <b>Do this instead:</b><br>
+                  <code>&lt;p&gt;</code>
+                    <code>&lt;input type="submit" value="log-in"&gt;</code><br>
+                  <code>&lt;/p&gt;</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </li>
     </main>
     <footer>

@@ -4,20 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>
-      
+      NESTING RULES
     </title>
   </head>
   <body>
     <header>
       <h1>
-
+        List of the nesting rules
       </h1>
+      <h2>
+        These are some of the nesting rules:
+      </h2>
     </header>
     <main>
-
+      <ul>
+        <li>
+          <b>All tags must be closed:</b> To close a tag, repeat the opening tag exactly, but insert a slash in front of the tag name.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;div&gt;</code> Ernest Hemingway<br>
+                    <code>&lt;p&gt;</code> Roses are Red
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;div&gt;</code> Ernest Hemingway
+                    <code>&lt;/div&gt;</code><br>
+                    <code>&lt;p&gt;</code>Roses are Red <code>&lt;/p&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>All tags must pe properly nested:</b> When you nest one tag within another, pay attention to the order in which you open each tag, and then close the tags in the reverse order. If you open element A and then element B, you must first close B before closing A.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;div&gt;</code><code>&lt;p&gt;</code>Put<code>&lt;/div&gt;</code><code>&lt;/p&gt;</code><br>
+                    <code>&lt;section&gt;</code><code>&lt;h1&gt;</code>Text<code>&lt;/section&gt;</code><code>&lt;/h1&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;div&gt;</code><code>&lt;p&gt;</code>Put<code>&lt;/p&gt;</code><code>&lt;/div&gt;</code><br>
+                    <code>&lt;section&gt;</code><code>&lt;h1&gt;</code>Text<code>&lt;/h1&gt;</code><code>&lt;/section&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>Tag names have strict limits:</b> Tag names can’t start with a number, or punctuation, except for the underscore character (_).
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;01_article&gt;</code><br>
+                    <code>&lt;"article"&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;article&gt;</code><br>
+                    <code>&lt;_article&gt;</code><br>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>Tag names are case sensitive:</b> Uppercase and lowercase matter in HTML. Opening and closing tags must match exactly. For example, <code>&lt;root&gt;</code> is the opening tag the closing tag should be <code>&lt;/root&gt;</code>.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <b>Don't do this:</b><br>
+                    <code>&lt;label&gt;</code>Hemingway<code>&lt;/LABEL&gt;</code><br>
+                    <code>&lt;Label&gt;</code>Hemingway<code>&lt;/lABEL&gt;</code>
+                  </li>
+                  <li>
+                    <b>Do this instead:</b><br>
+                    <code>&lt;label&gt;</code>Hemingway<code>&lt;/label&gt;</code><br>
+                    <code>&lt;LABEL&gt;</code>Hemingway<code>&lt;/LABEL&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>Attribute values must appear within quotes:</b> Attribute values modify a tag or help identify the type of information being tagged.
+          <ul>
+            <li>
+              <b>Example:</b>
+                <ul>
+                  <li>
+                    <code>&lt;chapter number="1"&gt;</code><br>
+                    <code>&lt;artist title="author" nationality="USA"&gt;</code>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b>Avoid HTML Tags (Optional):</b> Because you can name tags anything you want, you could use tags reserved for HTML markup, such as <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;li&gt;</code>.
+        </li>
+      </ul>
+      <h2>
+        Don't do like these:
+      </h2>
+      <ul>
+        <li>
+          <code>&lt;html&gt;</code><br>
+          <code>&lt;head&gt;</code><br>
+          <code>&lt;title&gt;</code><br>
+          Document title belongs here<br>
+          <code>&lt;title&gt;</code><br>
+          <code>&lt;body&gt;</code><br>
+          Text and other contents belong here<br>
+          <code>&lt;/body&gt;</code><br>
+          <code>&lt;/HTML&gt;</code><br>
+        </li>
+        <li>
+          <code>&lt;html&gt;</code><br>
+          <code>&lt;head&gt;</code><br>
+          <code>&lt;title&gt;</code><br>
+          Document title belongs here<br>
+          <code>&lt;/head&gt;</code><br>
+          <code>&lt;title&gt;</code><br>
+          <code>&lt;Body&gt;</code><br>
+          These are some rules<br>
+          <code>&lt;/body&gt;</code><br>
+        </li>
+      </ul>
+      <h2>
+        Do like these:
+      </h2>
+      <ul>
+        <li>
+          <code>&lt;html&gt;</code><br>
+          <code>&lt;head&gt;</code><br>
+          <code>&lt;title&gt;</code><br>
+          Document title belongs here<br>
+          <code>&lt;title&gt;</code><br>
+          <code>&lt;/head&gt;</code><br>
+          <code>&lt;body&gt;</code><br>
+          Text and other contents belong here<br>
+          <code>&lt;/body&gt;</code><br>
+          <code>&lt;/html&gt;</code><br>
+        </li>
+        <li>
+          <code>&lt;html&gt;</code><br>
+          <code>&lt;head&gt;</code><br>
+          <code>&lt;title&gt;</code><br>
+          Document title belongs here<br>
+          <code>&lt;title&gt;</code><br>
+          <code>&lt;/head&gt;</code><br>
+          <code>&lt;body&gt;</code><br>
+          These are some rules<br>
+          <code>&lt;/body&gt;</code><br>
+          <code>&lt;/html&gt;</code><br>
+        </li>
+      </ul>
     </main>
     <footer>
-        <a href="rules.html">Go back to the list of rules</a>
+        <a href="rules.html">
+          Go back to the list of rules
+        </a>
     </footer>
   </body>
 </html>
